@@ -27,6 +27,7 @@ INCLUDE_DIRS =\
   
 #CPPUTEST_WARNINGFLAGS += -pedantic-errors -Wconversion -Wshadow  -Wextra
 CPPUTEST_WARNINGFLAGS += -Wall -Werror -Wswitch-default -Wswitch-enum 
-
+CPPUTEST_WARNINGFLAGS += -Wno-reserved-id-macro
+CPPUTEST_WARNINGFLAGS += -Wno-keyword-macro
 
 include $(CPPUTEST_HOME)/build/MakefileWorker.mk
