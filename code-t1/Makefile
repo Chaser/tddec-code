@@ -19,6 +19,17 @@ CPPUTEST_WARNINGFLAGS += -Werror
 CPPUTEST_WARNINGFLAGS += -Wswitch-default 
 CPPUTEST_WARNINGFLAGS += -Wswitch-enum  
 CPPUTEST_WARNINGFLAGS += -Wno-unused-parameter
+CPPUTEST_CXX_WARNINGFLAGS = -Wno-c++14-compat
+
+ifeq ($(CPP_PLATFORM),clang)
+	CPPUTEST_WARNINGFLAGS += -Wno-documentation
+	CPPUTEST_WARNINGFLAGS += -Wno-long-long
+	CPPUTEST_WARNINGFLAGS += -Wno-sign-conversion
+	CPPUTEST_WARNINGFLAGS += -Wno-covered-switch-default
+	CPPUTEST_WARNINGFLAGS += -Wno-shorten-64-to-32
+	CPPUTEST_WARNINGFLAGS += -Wno-shadow
+endif
+
 CPPUTEST_CFLAGS += -std=c89
 CPPUTEST_CFLAGS += -Wextra 
 CPPUTEST_CFLAGS += -pedantic 
