@@ -19,20 +19,7 @@ CPPUTEST_WARNINGFLAGS += -Werror
 CPPUTEST_WARNINGFLAGS += -Wswitch-default 
 CPPUTEST_WARNINGFLAGS += -Wswitch-enum  
 CPPUTEST_WARNINGFLAGS += -Wno-unused-parameter
-
-# Temporary setting of C++ flag to ignore C++14 compatability for gcc > 5
-# Should be moved into CPPUTest make file with PR
-CPPUTEST_CXX_WARNINGFLAGS = -Wno-c++14-compat
-
-ifeq ($(CPP_PLATFORM),clang)
-	CPPUTEST_WARNINGFLAGS += -Wno-documentation
-	CPPUTEST_WARNINGFLAGS += -Wno-long-long
-	CPPUTEST_WARNINGFLAGS += -Wno-sign-conversion
-	CPPUTEST_WARNINGFLAGS += -Wno-covered-switch-default
-	CPPUTEST_WARNINGFLAGS += -Wno-shorten-64-to-32
-endif
-
-CPPUTEST_CFLAGS += -std=c89
+CPPUTEST_CFLAGS += -std=c99
 CPPUTEST_CFLAGS += -Wextra 
 CPPUTEST_CFLAGS += -pedantic 
 CPPUTEST_CFLAGS += -Wstrict-prototypes
