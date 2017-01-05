@@ -54,6 +54,7 @@ MOCKS_SRC_DIRS = \
 CPPUTEST_WARNINGFLAGS = -Wall -Wswitch-default -Werror 
 CPPUTEST_WARNINGFLAGS += -Wno-missing-prototypes -Wno-format-nonliteral -Wno-sign-conversion -Wno-pedantic 
 CPPUTEST_WARNINGFLAGS += -Wno-shadow -Wno-missing-field-initializers -Wno-unused-parameter
+CPPUTEST_WARNINGFLAGS += -Wno-unknown-warning-option
 #CPPUTEST_CFLAGS = -std=c89 
 CPPUTEST_CFLAGS += -Wall -Wstrict-prototypes -pedantic
 LD_LIBRARIES = -lpthread

@@ -21,6 +21,7 @@ CPPUTEST_WARNINGFLAGS += -Wswitch-enum
 CPPUTEST_WARNINGFLAGS += -Wno-unused-parameter
 CPPUTEST_WARNINGFLAGS += -Wno-shadow
 CPPUTEST_WARNINGFLAGS += -Wno-covered-switch-default
+CPPUTEST_WARNINGFLAGS += -Wno-unknown-warning-option
 CPPUTEST_CFLAGS += -std=c99
 CPPUTEST_CFLAGS += -Wextra 
 CPPUTEST_CFLAGS += -pedantic 

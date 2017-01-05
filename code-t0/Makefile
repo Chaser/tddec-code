@@ -19,6 +19,7 @@ CPPUTEST_WARNINGFLAGS += -Werror
 CPPUTEST_WARNINGFLAGS += -Wswitch-default 
 CPPUTEST_WARNINGFLAGS += -Wswitch-enum
 CPPUTEST_WARNINGFLAGS += -Wno-documentation
+CPPUTEST_WARNINGFLAGS += -Wno-unknown-warning-option
 CPPUTEST_CFLAGS += -Wextra 
 CPPUTEST_CFLAGS += -pedantic 
 CPPUTEST_CFLAGS += -Wstrict-prototypes
